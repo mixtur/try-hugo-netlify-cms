@@ -1,0 +1,7 @@
+{{define "main"}}
+    {{range .Pages "Blog"}}
+        <div>
+            <a href="{{.Url}}">{{.Title}}</a>
+        </div>
+    {{end}}
+{{end}}
