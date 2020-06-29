@@ -1,0 +1,12 @@
+{{define "main"}}
+    <ul class="index">
+    {{range .Pages}}
+            <li>
+                <article>
+                    <a href="{{.URL}}" class="index__item-title-link"><h2>{{.Title}}</h2></a>
+                    <div>{{.Description}}</div>
+                </article>
+            </li>
+    {{end}}
+    </ul>
+{{end}}

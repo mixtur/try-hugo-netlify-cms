@@ -12,5 +12,23 @@ body
 header, footer
   flex: 0 0 auto
 
+header, footer, main
+  width: 100%
+  max-width: 800px
+  align-self: center
+
 main
   flex: 1
+
+.index
+  &, li
+    list-style: none
+    margin: 0
+    padding: 0
+  li + li > article
+    margin-top: 10px
+    border-top: 1px solid black
+
+  &__item-title-link
+
+@import "header.sass"

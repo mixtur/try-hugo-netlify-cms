@@ -1,3 +1,5 @@
 {{define "main"}}
-    Home page
+    {{range .Site.RegularPages}}
+        {{.Title}}<br />
+    {{end}}
 {{end}}
